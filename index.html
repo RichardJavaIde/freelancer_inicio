@@ -4,11 +4,14 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
+    <title>Diseñador freelancer</title>
+
+    <link rel="preload" href="css/styles.css" as="styles" />
+    <link rel="stylesheet" href="css/styles.css" />
   </head>
   <body>
     <head>
-      <h1>Richard Duran</h1>
+      <h1 class="titulo">Richard Duran <span>freelancer</span></h1>
     </head>
     <nav>
       <a href="#">Inicio</a>
@@ -17,7 +20,7 @@
       <a href="#">Contacto</a>
     </nav>
     <section>
-      <h2>Diseño y desarollo we freelancer</h2>
+      <h2 class="titulo">Diseño y desarollo web</h2>
       <svg
         xmlns="http://www.w3.org/2000/svg"
         class="icon icon-tabler icon-tabler-map-pin"
@@ -151,6 +154,35 @@
 
     <section>
       <h2>Contacto</h2>
+      <form>
+        <fieldset>
+          <legend>Contactanos llenando todos los campos</legend>
+
+          <div>
+            <label>Nombre.</label>
+            <input type="text" placeholder="Nombre" />
+          </div>
+
+          <div>
+            <label>Telefono.</label>
+            <input type="tel" placeholder="Tu Telefono" />
+          </div>
+
+          <div>
+            <label>Correo</label>
+            <input type="email" placeholder="Tu Email" />
+          </div>
+
+          <div>
+            <label>Mensaje</label>
+            <textarea></textarea>
+          </div>
+
+          <div>
+            <input type="submit" value="Enviar" />
+          </div>
+        </fieldset>
+      </form>
     </section>
     <footer>
       <p>Todos los derechos reservados. Richard Duran freelancer.</p>
