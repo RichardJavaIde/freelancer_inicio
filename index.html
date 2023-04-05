@@ -5,6 +5,19 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Diseñador freelancer</title>
+    <!-- Esto es normalize para que el estilo se vea iqual en todos los navegadores -->
+    <link rel="preload" href="css/normalize.css" as="styles" />
+    <!--Esto es para que pre-->
+    <link rel="stylesheet" href="css/normalize.css" />
+
+    <!-- Esto es google form para acregar fuentes a todo lo que sea texto y se carga con el codogo css que te da la paguina de google form
+    EJ:font-family: "Krub", sans-serif; -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Krub:wght@400;700&family=Open+Sans:ital@1&family=Raleway:wght@400;700;900&display=swap"
+      rel="stylesheet"
+    />
 
     <link rel="preload" href="css/styles.css" as="styles" />
     <link rel="stylesheet" href="css/styles.css" />
@@ -13,14 +26,16 @@
     <head>
       <h1 class="titulo">Richard Duran <span>freelancer</span></h1>
     </head>
-    <nav>
-      <a href="#">Inicio</a>
-      <a href="#">Sobre mi</a>
-      <a href="#">Clientes</a>
-      <a href="#">Contacto</a>
-    </nav>
+    <div class="nav-bg">
+      <nav class="navegacion-principal contenedor">
+        <a href="#">Inicio</a>
+        <a href="#">Sobre mi</a>
+        <a href="#">Clientes</a>
+        <a href="#">Contacto</a>
+      </nav>
+    </div>
     <section>
-      <h2 class="titulo">Diseño y desarollo web</h2>
+      <h2 class="titulo">Diseño y desarollo web <span>freelancer</span></h2>
       <svg
         xmlns="http://www.w3.org/2000/svg"
         class="icon icon-tabler icon-tabler-map-pin"

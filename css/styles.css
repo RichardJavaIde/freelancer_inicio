@@ -1,9 +1,19 @@
+:root {
+  --blanco: #ffffff;
+  --oscuro: #212121;
+  --primario: #ffc107;
+  --secudario: #0097a7;
+  --gris: #757575;
+}
 html {
   font-size: 62.5%;
 }
 
 body {
+  /* aqui ponemos lo que queremos que se le aplique a todo.*/
   font-size: 16px;
+  font-family: "Krub", sans-serif; /** Si esta en el body carga el estilo en 
+  todos los elementos y no hay que acignarla a cada uno.**/
 }
 .titulo {
   text-align: center;
@@ -12,4 +22,29 @@ body {
 
 .titulo span {
   font-size: 2rem;
+}
+
+.contenedor {
+  width: 120rem;
+  margin: 0 auto;
+}
+
+.nav-bg {
+  background-color: var(--secudario);
+}
+.navegacion-principal {
+  display: flex; /**Para abilitar la occiones de Flexbox y ciempre se aplica en la clase padre.**/
+  justify-content: space-between; /**Este trabaja orisontalmente, space es para distribuir el contenido**/
+}
+
+.navegacion-principal a {
+  color: var(--blanco);
+  text-decoration: none; /** Este es para quitar la linea de abajo del texto.**/
+  font-size: 2rem; /**Esto es para hacer el texto mas grande**/
+  font-weight: 700; /**Este es para hacer mas negrita el texto de la fuete que se cargo de google form.**/
+  padding: 1rem;
+}
+.navegacion-principal a:hover {
+  background-color: var(--primario); /**Para poner un color de fondo**/
+  color: var(--oscuro); /**Para poner un color al texto**/
 }
