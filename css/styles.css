@@ -7,8 +7,13 @@
 }
 html {
   font-size: 62.5%;
+  box-sizing: border-box;
 }
-
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+}
 body {
   /* aqui ponemos lo que queremos que se le aplique a todo.*/
   font-size: 16px;
@@ -25,7 +30,8 @@ body {
 }
 
 .contenedor {
-  width: 120rem;
+  max-width: 120rem; /**Este nossirve para auto ajustar la bara de navegacion aunque agamos
+  la pantalla mas pequeña.**/
   margin: 0 auto;
 }
 
@@ -34,10 +40,17 @@ body {
 }
 .navegacion-principal {
   display: flex; /**Para abilitar la occiones de Flexbox y ciempre se aplica en la clase padre.**/
-  justify-content: space-between; /**Este trabaja orisontalmente, space es para distribuir el contenido**/
+  flex-direction: column;
 }
-
+@media (min-width: 786px) {
+  .navegacion-principal {
+    flex-direction: row;
+    justify-content: space-between; /**Este trabaja orisontalmente, space es para distribuir el contenido**/
+  }
+}
 .navegacion-principal a {
+  display: block;
+  text-align: center;
   color: var(--blanco);
   text-decoration: none; /** Este es para quitar la linea de abajo del texto.**/
   font-size: 2rem; /**Esto es para hacer el texto mas grande**/
@@ -47,4 +60,11 @@ body {
 .navegacion-principal a:hover {
   background-color: var(--primario); /**Para poner un color de fondo**/
   color: var(--oscuro); /**Para poner un color al texto**/
+}
+.hero {
+  background-image: url(../img/hero.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 450px;
+  padding: 20px;
 }
