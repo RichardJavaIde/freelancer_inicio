@@ -48,6 +48,25 @@ h3 {
   margin: 0 auto;
 }
 
+.boton {
+  background-color: var(--secudario);
+  color: var(--blanco);
+  padding: 1rem 3rem;
+  margin: 3rem; /**para separar el boton de ariba*/
+  font-size: 2rem; /** para ponerle el texto mas grande*/
+  text-decoration: none;
+  text-transform: uppercase; /** para ponerle el texto en mayuscula*/
+  font-weight: bold; /** para ponerle el texto el negrita*/
+  border-radius: 0.5rem; /** para ponerle un borde redondo a el boton**/
+  width: 90%; /**Para agrandar el padin**/
+  text-align: center;
+}
+
+@media (min-width: 768px) {
+  .boton {
+    width: auto; /**Para resetear el espacio del boton**/
+  }
+}
 .nav-bg {
   background-color: var(--secudario);
 }
@@ -101,7 +120,7 @@ h3 {
 .contenido-hero p {
   color: var(--blanco);
 }
-.ubucacion {
+.ubicacion {
   display: flex;
   align-items: flex-end;
 }
